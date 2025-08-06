@@ -40,5 +40,4 @@ gear_counts <- table(mtcars$gear)
 pie(gear_counts, main = "Distribution of Cars by Gear", col = c("tomato", "skyblue", "lightgreen"))
 
 avg_mpg_by_cyl <- tapply(mtcars$mpg, mtcars$cyl, mean)
-
 barplot(avg_mpg_by_cyl, main = "Average MPG by Cylinder Count", xlab = "Number of Cylinders", ylab = "Average MPG", col = "purple")
