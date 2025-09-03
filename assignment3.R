@@ -27,7 +27,7 @@ print(Varx)
 
 x = 0:n
 Px = dbinom(x, n, p)
-plot(x, Px, type = "l", col = "red", xlab = "Number of Heads", ylab = "Probability")
+plot(x, Px, type = "l", lwd = 2, col = "red", xlab = "Number of Heads", ylab = "Probability")
 
 #Q.2 An insurance company found that only 0.01% of the population is involved in a certain type of accident each year. If a thousand policy holders were randomly selected, what is the probability that not more than 2 of its clients are involved in such an accident next year?
 n = 1000
@@ -47,3 +47,7 @@ Ex = lambda
 print(Ex)
 Varx = lambda
 print(Varx)
+
+x = 0:5
+Px = dpois(x, lambda)
+plot(x, Px, type = "l", lwd = 2, col = "blue", xlab = "Number of Accidents", ylab = "Probability")

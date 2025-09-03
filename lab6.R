@@ -1,6 +1,6 @@
 R.home("bin")
 
-#n - no. of independent bernouli trials p - success, q - failure
+#n - no. of independent Bernouli trials p - success, q - failure
 #binomial expression
 #P(X = x) = xc x p^x q^n-x
 
@@ -43,7 +43,7 @@ print(Ex)
 weighted.mean(x*x, Px) - (Ex*Ex)
 
 #f. visualization
-plot(x, Px, type = "l", xlab = "instances", ylab = "probability", col = "blue")
+plot(x, Px, type = "l", xlab = "Instances", ylab = "Probability", col = "blue")
 
 #Poisson Distribution
 #P(X = x) = e^-lambda lambda^x/x1 0 , x = 0, 1, 2, ...
@@ -92,4 +92,4 @@ print(Ex)
 weighted.mean(x*x, Dx) - (Ex*Ex)
 
 #f. 
-plot(x, Dx, type = "l", xlab = "instances", ylab = "probability", col = "blue")
+plot(x, Dx, type = "l", xlab = "Instances", ylab = "Probability", col = "blue")
