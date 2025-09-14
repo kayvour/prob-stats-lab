@@ -72,17 +72,17 @@ plot(x, y, type = "l", lwd = 2, xlab = "Balance (Rs)", ylab = "Density")
 legend("topright", legend = c("X > 200", "120 ≤ X ≤ 170", "X < 75"), fill = c("lightgreen", "lightblue", "pink"))
 
 # X > 200
-x1 = seq(200, 300, 1)
+x1 = seq(200, 300, 0.1)
 y1 = dnorm(x1, mu, sigma)
 polygon(c(200, x1, 300), c(0, y1, 0), col = "lightgreen")
 
 # 120 ≤ X ≤ 170
-x2 = seq(120, 170, 1)
+x2 = seq(120, 170, 0.1)
 y2 = dnorm(x2, mu, sigma)
 polygon(c(120, x2, 170), c(0, y2, 0), col = "lightblue")
 
 # X < 75
-x3 = seq(0, 75, 1)
+x3 = seq(0, 75, 0.1)
 y3 = dnorm(x3, mu, sigma)
 polygon(c(0, x3, 75), c(0, y3, 0), col = "pink")
 
