@@ -1,6 +1,10 @@
 R.home("bin")
 
-#1
+# student's t-test and paired t-test
+# for mean > 30, t = (xbar-u)/sigma/root(n)
+# for paired, t = ud/s/root(n)
+
+#1 Two independent samples of sizes 8 and 7 contained the following values
 sample1 = c(19,17,15,21,16,18,16,14)
 sample2 = c(15,14,15,19,15,18,16,20)
 
@@ -22,7 +26,7 @@ if(abs(cv) < tv) {
 
 conclusion
 
-#2
+#2 The following data relate to the marks obtained by 10 students in two test, one held at the beginning of a year and the other at the end of the year after intensive coaching. Do the data indicate that the students have got benefited by coaching?
 
 test1 = c(19,17,15,21,16,18,16,14,19,20)  # before
 test2 = c(15,14,15,19,15,18,16,20,22,19)  # after
@@ -44,7 +48,7 @@ if(cv < tv) {
 
 conclusion
 
-#3
+#3 Two independent samples of sizes 8 and 7 contained the following values (f-test)
 
 sample1 = c(19,17,15,21,16,18,16,14)
 sample2 = c(15,14,15,19,15,18,16,20)
@@ -65,8 +69,8 @@ if(cv <= tv) {
 }
 conclusion
 
-#4
-
+#4 Five coins are tossed 256 times. The number of heads observed by binomial distribution is given below. Examine if the coins are unbiased by employing chi-square goodness of fit.
+# chi-test
 n = 5
 N = 256
 p = 0.5
@@ -88,7 +92,7 @@ if(cv < tv) {
 }
 conclusion
 
-#5
+#5 From the following information state whether the condition of the child is associated with the condition of the house.
 
 data = matrix(c(69,51,81,20,35,44), ncol=2, byrow=TRUE)
 alpha = 0.05
